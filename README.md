@@ -53,7 +53,10 @@ while True:
 
 cap.release()
 print("Frames saved!")
+
+
 🏷️ 3. Annotation & Dataset Creation (Roboflow)
+
 Uploaded extracted frames to Roboflow
 
 Used Auto Label + Manual correction
@@ -64,96 +67,11 @@ Exported in YOLO11 format
 
 📥 Roboflow dataset download code:
 
-python
-Copy code
 from roboflow import Roboflow
 
 rf = Roboflow(api_key="YOUR_API_KEY")
 project = rf.workspace().project("mug-detection")
 dataset = project.version(1).download("yolov11")
-🎯 4. Training YOLO11 Model
-python
-Copy code
-from ultralytics import YOLO
-
-model = YOLO("yolo11n.pt")  # YOLO11 nano model
-model.train(
-    data="data.yaml",
-    epochs=50,
-    imgsz=640,
-    batch=8,
-    project="runs/detect",
-    name="mug_model_yolo11"
-)
-📌 Output structure (auto-generated):
-
-bash
-Copy code
-runs/detect/mug_model_yolo11/
-└── weights/
-    ├── best.pt   ← used for inference
-🧪 5. Streamlit Web App Demo (app.py)
-Run this file using:
-
-bash
-Copy code
-streamlit run app.py
-✔ Upload image or video
-✔ Streamlit shows detection results live
-✔ Saves detection video to streamlit_outputs/
-
-📂 Project Structure
-bash
-Copy code
-Mug_detection_system/
-├── app.py                    # Streamlit detection demo app
-├── video_demo.py             # Simple CLI-based video detection script
-├── extract_frames.py         # Frame extraction from raw videos
-├── train_mug_yolo11.py       # Model training
-├── roboflow.ipynb            # Dataset download notebook
-├── requirements.txt          # Dependencies
-├── .gitignore
-├── README.md
-⚙️ Installation & Setup
-bash
-Copy code
-# Clone repository
-git clone https://github.com/Nellutla123/Mug_detection_system.git
-cd Mug_detection_system
-
-# Create virtual environment
-python -m venv venv
-venv\Scripts\activate   # (Windows)
-
-# Install dependencies
-pip install -r requirements.txt
-▶️ How to Run
-🔹 Run Web App (streamlit)
-bash
-Copy code
-streamlit run app.py
-🔹 Run CLI video detection
-bash
-Copy code
-python video_demo.py
-🎥 Test Data Source (Try These Videos!)
-Type	Source
-Mug-Holding Videos	https://www.pexels.com/search/videos/coffee%20mug/
-Example Video	https://www.pexels.com/video/person-holding-a-coffee-mug-7986492/
-Mug Images	https://www.pexels.com/search/mug/
-
-💡 You can download and upload directly in app.py.
-
-🛠️ Requirements (requirements.txt)
-nginx
-Copy code
-ultralytics
-streamlit
-opencv-python
-pillow
-numpy
-torch
-torchvision
 
 
 
