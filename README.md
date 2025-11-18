@@ -76,18 +76,21 @@ Exported in YOLO11 format
 
 
 
-🛠️ Requirements
+🧩 Dependencies
 
-Install all dependencies from requirements.txt, which includes:
+⚡ ultralytics — YOLO11 model training & inference
 
-Package	Description
-⚡ ultralytics	YOLO11 model training & inference
-🖥️ streamlit	Web UI for image/video mug detection
-🎥 opencv-python	Image & video processing
-🖼️ pillow	Image loading & manipulation
-🔢 numpy	Numerical operations
-🔥 torch	PyTorch deep learning framework
-🧠 torchvision	Vision utilities & transforms
+🖥️ streamlit — Web UI for image/video mug detection
+
+🎥 opencv-python — Image & video processing
+
+🖼️ pillow — Image loading & manipulation
+
+🔢 numpy — Numerical operations
+
+🔥 torch — PyTorch deep learning framework
+
+🧠 torchvision — Vision utilities & transforms
 
 
 
