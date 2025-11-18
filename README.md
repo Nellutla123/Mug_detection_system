@@ -75,15 +75,7 @@ Roboflow auto-split data into train, valid, test
 Exported in YOLO11 format
 
 
-🏷️ 3. Annotation & Dataset Creation (Roboflow)
 
-Uploaded extracted frames to Roboflow
-
-Used Auto Label + Manual correction
-
-Roboflow auto-split data into train, valid, test
-
-Exported in YOLO11 format
 
 📂 Project Structure
 Mug_detection_system/
