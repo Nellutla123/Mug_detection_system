@@ -2,21 +2,16 @@
 
 A complete Mug Detection system using **YOLO11 (Ultralytics)** for detection and **Streamlit** for live web-based demo.  
 This project demonstrates real-time image/video mug detection using a custom-trained model.
-
-
-
-<img width="1920" height="1080" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/4233cc95-d274-46c6-9a29-902a4024e2da" />
+<img width="1838" height="821" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/58af31f6-b6a4-4656-9f0b-b06975f21ee5" />
 
 
 
 
-<img width="1920" height="1080" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/e09f151c-4c6b-4022-b13e-8ab808d30beb" />
+---<img width="1851" height="881" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/5da85b4d-96a6-4a75-9e2e-5049d12312a3" />
 
 
+<img width="1874" height="942" alt="Screenshot (48)" src="https://github.com/user-attachments/assets/d4808087-9acc-4855-a0f5-085e5cc623f3" />
 
-<img width="1920" height="1080" alt="Screenshot (48)" src="https://github.com/user-attachments/assets/1930c958-0507-481c-954d-5d2e249bab92" />
-
----
 
 ## 🚀 Tech Stack
 
