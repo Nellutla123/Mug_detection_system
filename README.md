@@ -75,6 +75,40 @@ Roboflow auto-split data into train, valid, test
 Exported in YOLO11 format
 
 
+🏷️ 3. Annotation & Dataset Creation (Roboflow)
+
+Uploaded extracted frames to Roboflow
+
+Used Auto Label + Manual correction
+
+Roboflow auto-split data into train, valid, test
+
+Exported in YOLO11 format
+
+📂 Project Structure
+Mug_detection_system/
+├── app.py                    # Streamlit detection demo app
+├── video_demo.py             # Simple CLI-based video detection script
+├── extract_frames.py         # Frame extraction from raw videos
+├── train_mug_yolo11.py       # Model training
+├── roboflow.ipynb            # Dataset download notebook
+├── requirements.txt          # Dependencies
+├── .gitignore
+├── README.md
+
+⚙️ Installation & Setup
+# Clone repository
+git clone https://github.com/Nellutla123/Mug_detection_system.git
+cd Mug_detection_system
+
+# Create virtual environment
+python -m venv venv
+venv\Scripts\activate   # (Windows)
+
+# Install dependencies
+pip install -r requirements.txt
+
+
 
 
 
