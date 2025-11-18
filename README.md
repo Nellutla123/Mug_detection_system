@@ -4,7 +4,7 @@ A complete Mug Detection system using **YOLO11 (Ultralytics)** for detection and
 This project demonstrates real-time image/video mug detection using a custom-trained model.
 
 
-Screenshot (45).png
+
 
 ---
 
