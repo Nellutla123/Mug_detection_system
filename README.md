@@ -26,18 +26,31 @@ The project demonstrates:
 
 ---
 
-## 📁 Project Overview
+## 📂 Project Structure
+Mug_detection_system/
+├── app.py                    # Streamlit detection demo app
+├── video_demo.py             # Simple CLI-based video detection script
+├── extract_frames.py         # Frame extraction from raw videos
+├── train_mug_yolo11.py       # Model training
+├── roboflow.ipynb            # Dataset download notebook
+├── requirements.txt          # Dependencies
+├── .gitignore
+├── README.md
 
-This repository contains:
+⚙️ Installation & Setup
+# Clone repository
+git clone https://github.com/Nellutla123/Mug_detection_system.git
+cd Mug_detection_system
 
-- `app.py` – Streamlit web app for **image & video mug detection**
-- YOLO11 training & inference code (in scripts / notebook)
-- `requirements.txt` – minimal Python dependencies
-- `.gitignore` – to keep the repo clean (ignores `runs/`, weights, large videos, etc.)
+# Create virtual environment
+python -m venv venv
+venv\Scripts\activate   # (Windows)
 
-> 🔹 **Goal**: Show a working end-to-end mini project: from data collection → training → demo on video.
+# Install dependencies
+pip install -r requirements.txt
 
 ---
+ 📌 Project Workflow
 
 ## 🧬 1. Data Collection & Dataset Creation
 
@@ -91,6 +104,49 @@ while True:
 
 cap.release()
 print("Frames saved to:", output_dir)
+
+
+🏷️ 3. Annotation & Dataset Creation (Roboflow)
+
+Uploaded extracted frames to Roboflow
+
+Used Auto Label + Manual correction
+
+Roboflow auto-split data into train, valid, test
+
+Exported in YOLO11 format
+
+
+🎯 4. Training YOLO11 Model
+from ultralytics import YOLO
+
+model = YOLO("yolo11n.pt")  # YOLO11 nano model
+model.train(
+    data="data.yaml",
+    epochs=50,
+    imgsz=640,
+    batch=8,
+    project="runs/detect",
+    name="mug_model_yolo11"
+)
+
+📌 Output structure (auto-generated):
+
+runs/detect/mug_model_yolo11/
+└── weights/
+    ├── best.pt   ← used for inference
+
+🧪 5. Streamlit Web App Demo (app.py)
+
+Run this file using:
+
+streamlit run app.py
+
+
+✔ Upload image or video
+✔ Streamlit shows detection results live
+✔ Saves detection video to streamlit_outputs/
+
 
 
 
