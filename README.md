@@ -65,13 +65,6 @@ Roboflow auto-split data into train, valid, test
 
 Exported in YOLO11 format
 
-📥 Roboflow dataset download code:
-
-from roboflow import Roboflow
-
-rf = Roboflow(api_key="YOUR_API_KEY")
-project = rf.workspace().project("mug-detection")
-dataset = project.version(1).download("yolov11")
 
 
 
