@@ -76,17 +76,18 @@ Exported in YOLO11 format
 
 
 
+🛠️ Requirements
 
-📂 Project Structure
-Mug_detection_system/
-├── app.py                    # Streamlit detection demo app
-├── video_demo.py             # Simple CLI-based video detection script
-├── extract_frames.py         # Frame extraction from raw videos
-├── train_mug_yolo11.py       # Model training
-├── roboflow.ipynb            # Dataset download notebook
-├── requirements.txt          # Dependencies
-├── .gitignore
-├── README.md
+Install all dependencies from requirements.txt, which includes:
+
+Package	Description
+⚡ ultralytics	YOLO11 model training & inference
+🖥️ streamlit	Web UI for image/video mug detection
+🎥 opencv-python	Image & video processing
+🖼️ pillow	Image loading & manipulation
+🔢 numpy	Numerical operations
+🔥 torch	PyTorch deep learning framework
+🧠 torchvision	Vision utilities & transforms
 
 
 
