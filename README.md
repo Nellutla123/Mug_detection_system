@@ -88,6 +88,17 @@ Mug_detection_system/
 ├── .gitignore
 ├── README.md
 
+
+
+🛠️ Requirements (requirements.txt)
+ultralytics
+streamlit
+opencv-python
+pillow
+numpy
+torch
+torchvision
+
 ⚙️ Installation & Setup
 # Clone repository
 git clone https://github.com/Nellutla123/Mug_detection_system.git
