@@ -1,0 +1,49 @@
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VSCode, PyCharm, IDE configs
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Streamlit cache
+.streamlit/
+
+# Uploaded / temporary files
+temp/
+tmp/
+*.temp
+*.tmp
+
+# YOLO output folders
+runs/
+streamlit_outputs/
+uploads/
+results/
+
+# Log files
+*.log
+
+# Videos and images
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.jpg
+*.jpeg
+*.png
+
+# Model weights
+*.pt
+*.pth

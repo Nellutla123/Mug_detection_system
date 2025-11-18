@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['mug']
+
+roboflow:
+  workspace: ai-devloper-17jru
+  project: mug_object_detection-yid5s
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/ai-devloper-17jru/mug_object_detection-yid5s/dataset/1
