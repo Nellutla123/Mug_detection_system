@@ -5,10 +5,16 @@ This project demonstrates real-time image/video mug detection using a custom-tra
 
 
 
+<img width="1920" height="1080" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/4233cc95-d274-46c6-9a29-902a4024e2da" />
 
 
 
 
+<img width="1920" height="1080" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/e09f151c-4c6b-4022-b13e-8ab808d30beb" />
+
+
+
+<img width="1920" height="1080" alt="Screenshot (48)" src="https://github.com/user-attachments/assets/1930c958-0507-481c-954d-5d2e249bab92" />
 
 ---
 
